@@ -94,11 +94,10 @@
     <div class="container">
         <h2>Contacteer Ons</h2>
         <p>Heeft u vragen of wilt u meer informatie? Vul onderstaand formulier in, en wij nemen snel contact met u op.</p>
-        <form>
-            <input type="text" placeholder="Naam" required />
-            <input type="email" placeholder="E-mailadres"/>
-            <input type="phone" placeholder="Telefoon" required />
-            <textarea placeholder="Uw bericht" rows="5" required></textarea>
+        <form action="https://formspree.io/f/xpwybylp" method="POST">
+            <input type="text" name="name" placeholder="Naam" required>
+            <input type="email" name="email" placeholder="E-mailadres" required>
+            <textarea name="message" placeholder="Uw bericht" rows="5" required></textarea>
             <button type="submit" class="btn">Versturen</button>
         </form>
     </div>
