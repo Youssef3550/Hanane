@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H.M Thuisverpleging</title>
+    <link rel="stylesheet" href="Hanane.css" />
+</head>
+<body>
+<!-- Header -->
+<div class="above">
+    <p>Hanane Mahtar: <b>0483104798</b></p>  <p>Regio: Houthalen-Helechteren, Heusden-Zolder, Koersel, Beringen en deelgemeentes</p>
+</div>
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <img src="HM Logo Klein.jpeg" alt="H.M Thuisverpleging Logo" />
+        </div>
+        <nav class="nav">
+            <ul id="nav-links">
+                <li><a href="#diensten">Diensten</a></li>
+                <li><a href="#overons">Over Ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Warme zorg aan huis</h2>
+        <p>Professionele en persoonlijke thuisverpleging met een hart voor mensen.</p>
+        <a href="#contact" class="btn">Neem contact op</a>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="diensten" class="diensten">
+    <div class="container">
+        <h2>Onze Diensten</h2>
+        <div class="diensten-grid">
+            <div class="dienst">
+                <h3>Wondzorg</h3>
+                <p>Deskundige verzorging en opvolging van wonden, afgestemd op uw noden.</p>
+            </div>
+            <div class="dienst">
+                <h3>Inspuitingen</h3>
+                <p>Toediening van medicatie en injecties met de grootste zorg en hygiëne.</p>
+            </div>
+            <div class="dienst">
+                <h3>Hygiënische zorg</h3>
+                <p>Hulp bij dagelijkse verzorging, met respect en aandacht voor comfort.</p>
+            </div>
+            <div class="dienst">
+                <h3>Compressietherapie</h3>
+                <p>Ondersteuning bij compressiezorg, steeds professioneel uitgevoerd.</p>
+            </div>
+            <div class="dienst">
+                <h3>Medicatiebeheer</h3>
+                <p>Begeleiding en opvolging bij medicatie-inname op maat van de patiënt.</p>
+            </div>
+            <div class="dienst">
+                <h3>Pijnpompen</h3>
+                <p>Professionele zorg en opvolging bij pijnpomptherapie.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="overons" class="overons">
+    <div class="container overons-content">
+        <div class="text">
+            <h2>Over Ons</h2>
+            <p>
+                Bij H.M Thuisverpleging staan wij klaar om u te ondersteunen met warme en professionele zorg aan huis.
+                Wij geloven in persoonlijke aandacht, betrouwbaarheid en kwaliteit in elke zorgsituatie.
+            </p>
+            <br>
+            <p>
+                Wij bieden thuisverpleging aan in Houthalen-Helechteren, Heusden-Zolder, Koersel, Beringen en deelgemeentes. Indien je een vraag hebt of een zorg aanvraag mag je contact opnemen met Hanane Mahtar via het nummer <b>0483104798</b>
+            </p>
+        </div>
+        <div class="image">
+            <img src="nurse.jpg" alt="Over ons" />
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contacteer Ons</h2>
+        <p>Heeft u vragen of wilt u meer informatie? Vul onderstaand formulier in, en wij nemen snel contact met u op.</p>
+        <form>
+            <input type="text" placeholder="Naam" required />
+            <input type="email" placeholder="E-mailadres"/>
+            <input type="phone" placeholder="Telefoon" required />
+            <textarea placeholder="Uw bericht" rows="5" required></textarea>
+            <button type="submit" class="btn">Versturen</button>
+        </form>
+    </div>
+</section>
+
+<!-- Scroll-to-Top Button -->
+<button id="scrollTopBtn" title="Terug naar boven">↑</button>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 H.M Thuisverpleging - Warme zorg aan huis</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Intersection Observer animations
+    const elements = document.querySelectorAll('.dienst, .overons .text, .overons .image, .contact form');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    // Scroll-to-top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+        scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
