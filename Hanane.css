@@ -33,10 +33,9 @@ html, body {
     border-bottom: 1px solid #eee;
     padding: 10px;
     position: relative;
-    top: 0px;
+    top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    items-align: center;
 }
 .above p {text-align: center;}
 .above h4{
