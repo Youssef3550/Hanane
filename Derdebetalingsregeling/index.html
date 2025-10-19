@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derdebetalingsregeling | H.M Thuisverpleging</title>
+    <!-- Correct CSS path -->
+    <link rel="stylesheet" href="../Hanane.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class="above">
+    <p>Hanane Mahtar: <b>0483104798</b></p>
+    <p>Regio: Houthalen-Helchteren, Heusden-Zolder, Koersel, Beringen en deelgemeentes</p>
+</div>
+
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <img src="../HM Logo Klein.jpeg" alt="H.M Thuisverpleging Logo" />
+        </div>
+        <nav class="nav">
+            <ul id="nav-links">
+                <li><a href="../index.html">Hoofdpagina</a></li>
+                <li><a href="../index.html#diensten">Diensten</a></li>
+                <li><a href="../index.html#overons">Over Ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">DerdeBetalingsRegeling</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </nav>
+    </div>
+</header>
+
+<!-- Pagina-inhoud -->
+<section id="derdebetaling" class="diensten">
+    <div class="container">
+        <h2>Derdebetalingsregeling</h2>
+        <div class="diensten-grid">
+            <div class="dienst">
+                <h3>Wat betekent de derdebetalingsregeling?</h3>
+                <p>
+                    Bij <b>H.M Thuisverpleging</b> zorgen we dat u de nodige zorg krijgt, zonder zorgen over betalingen of administratie.
+                    Dankzij de <b>derdebetalingsregeling</b> hoeft u onze verpleegkundige niet zelf te betalen. Wij regelen alles rechtstreeks met uw ziekenfonds.
+                </p>
+                <p>
+                    Uw factuur wordt rechtstreeks via uw mutualiteit afgehandeld. U hoeft niets voor te schieten of papierwerk te doen.
+                    Zo kunt u zich volledig richten op uw herstel en welzijn.
+                </p>
+            </div>
+
+            <div class="dienst">
+                <h3>Wanneer geldt deze regeling?</h3>
+                <p>De derdebetalingsregeling geldt voor alle zorgen voorgeschreven door uw arts:</p>
+                <ul style="text-align:left; margin: 10px 0 0 25px; color:#555;">
+                    <li>Wondzorg</li>
+                    <li>Inspuitingen</li>
+                    <li>Hygiënische zorgen</li>
+                    <li>Compressietherapie</li>
+                    <li>Pijnpompen</li>
+                    <li>Medicatiebeheer</li>
+                </ul>
+                <p style="margin-top:15px;">
+                    Ook zonder doktersvoorschrift kunt u bij ons terecht, bijvoorbeeld voor hulp bij <b>wassen en aankleden</b>.
+                </p>
+            </div>
+
+            <div class="dienst">
+                <h3>Uw voordelen</h3>
+                <p>
+                    ✔ Geen directe betaling aan de verpleegkundige<br>
+                    ✔ Minder administratie<br>
+                    ✔ Alles geregeld via uw ziekenfonds<br>
+                    ✔ Betrouwbare en persoonlijke zorg aan huis
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contacteer Ons</h2>
+        <p>Heeft u vragen of wilt u meer informatie? Vul onderstaand formulier in, en wij nemen snel contact met u op.</p>
+        <form action="https://formspree.io/f/mzzjojap" method="POST">
+            <input type="text" name="name" placeholder="Naam" required>
+            <input type="email" name="email" placeholder="E-mailadres" required>
+            <input type="tel" name="phone" placeholder="Telefoonnummer" pattern="[0-9+ ]{8,}" required>
+            <textarea name="message" placeholder="Uw bericht" rows="5" required></textarea>
+            <button type="submit" class="btn">Versturen</button>
+        </form>
+    </div>
+</section>
+
+<!-- Scroll-naar-boven-knop -->
+<button id="scrollTopBtn" title="Terug naar boven">↑</button>
+
+<!-- WhatsApp-knop -->
+<a href="https://wa.me/32483104798?text=Beste,%20kan%20u%20mij%20meer%20informeren%20over%20uw%20thuisverplegingsdiensten."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 H.M Thuisverpleging - Warme zorg aan huis</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    // Scroll-to-top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+        scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Intersection Observer for animations
+    const elements = document.querySelectorAll('.dienst, .contact form');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
