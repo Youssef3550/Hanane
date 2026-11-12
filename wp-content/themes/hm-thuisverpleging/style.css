@@ -281,3 +281,14 @@ a { color: var(--primary-dark); }
     .whatsapp-float { width: 50px; height: 50px; bottom: 80px; right: 20px; }
     #scrollTopBtn { bottom: 25px; right: 22px; }
 }
+
+/* Over Hanane (v1.3) */
+.author-box img.initials { width: 64px; object-fit: cover; padding: 0; }
+.author-box a { color: inherit; }
+.hanane-foto { float: right; width: 300px; max-width: 42%; margin: 0 0 20px 28px; }
+.hanane-foto img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: auto; display: block; }
+.hanane-foto figcaption { font-size: .85rem; color: var(--text-light); text-align: center; margin-top: 8px; }
+.entry .clear { clear: both; }
+.home-content .wp-block-image img.hanane-home { max-width: 400px; } 
+.hanane-home { border-radius: var(--radius); box-shadow: var(--shadow); max-width: 360px; width: 100%; height: auto; margin: 0 auto; display: block; }
+@media (max-width: 600px) { .hanane-foto { float: none; width: 75%; max-width: 300px; margin: 24px auto 20px; } }
