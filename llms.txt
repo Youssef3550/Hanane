@@ -11,6 +11,8 @@
 - Google Maps: https://www.google.com/maps?cid=13584609343522030950
 - Werkgebied: Houthalen-Helchteren, Heusden-Zolder, Koersel, Beringen en deelgemeentes
 - Betaling: derdebetalingsregeling – er wordt rechtstreeks met het ziekenfonds (mutualiteit) afgerekend
+- Geconventioneerd: ja (officiële RIZIV-tarieven, geen supplementen)
+- Remgeld: geen – voor terugbetaalde zorg betaalt de patiënt niets
 - Website: https://hm-thuisverpleging.be/
 
 ## Pagina's
@@ -37,7 +39,7 @@ H.M Thuisverpleging is een thuisverplegingspraktijk van Hanane Mahtar. U krijgt 
 H.M Thuisverpleging werkt in Houthalen-Helchteren, Heusden-Zolder, Beringen (met onder meer Koersel, Beverlo en Paal) en de deelgemeentes. Woont u net buiten deze regio? Neem gerust contact op.
 
 ### Moet ik de thuisverpleegkundige zelf betalen?
-Nee. Dankzij de derdebetalingsregeling rekent H.M Thuisverpleging rechtstreeks af met uw ziekenfonds (mutualiteit). U hoeft niets voor te schieten en geen papierwerk te doen.
+Nee. Dankzij de derdebetalingsregeling rekent H.M Thuisverpleging rechtstreeks af met uw ziekenfonds (mutualiteit). U hoeft niets voor te schieten en geen papierwerk te doen. Er is ook geen remgeld: voor terugbetaalde zorg betaalt u niets.
 
 ### Heb ik een voorschrift van de dokter nodig?
 Sinds 1 november 2025 is voor veel verpleegkundige zorg geen apart voorschrift meer nodig voor terugbetaling. Voor wondzorg en hygiënische zorg, zoals hulp bij wassen en aankleden, hebt u geen voorschrift nodig. Medicatie moet wel nog altijd door uw arts worden voorgeschreven. Twijfelt u? Bel of stuur een WhatsApp-bericht, dan bekijken we het samen.
@@ -92,6 +94,12 @@ Nee, de facturatie verloopt rechtstreeks tussen H.M Thuisverpleging en uw zieken
 
 ### Geldt de regeling ook zonder voorschrift?
 Ja. Sinds 1 november 2025 is voor veel verpleegkundige zorg geen apart voorschrift meer nodig voor terugbetaling. Voor wondzorg en hygiënische zorg, zoals hulp bij wassen en aankleden, hebt u geen voorschrift nodig. Medicatie moet wel nog altijd door uw arts worden voorgeschreven.
+
+### Moet ik remgeld betalen?
+Nee. H.M Thuisverpleging vraagt geen remgeld. Voor zorg die uw ziekenfonds terugbetaalt, betaalt u dus niets.
+
+### Is Hanane Mahtar geconventioneerd?
+Ja. Hanane Mahtar is een geconventioneerde verpleegkundige: zij werkt aan de officiële RIZIV-tarieven en rekent geen supplementen aan.
 
 ### Is Hanane Mahtar een erkende verpleegkundige?
 Ja. Hanane Mahtar is als verpleegkundige ingeschreven bij het RIZIV sinds 30 juni 2021, met RIZIV-nummer 4-38619-62-408.
